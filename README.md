@@ -33,7 +33,7 @@ npx sb init --type vue3
 ```
 
 In root folder add file _.babelrc_ to enable typescript for storybook
-```json
+```jsonc
 // .babelrc
 
 {
