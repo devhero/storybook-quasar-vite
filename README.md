@@ -3,7 +3,42 @@
 Skeleton Typescript project based on Quasar v2 (Vue 3), Vite and Storybook
 
 
-# How this package was made:
+
+## Install the dependencies
+```bash
+yarn
+```
+
+### Start the app in development/production mode (hot-code reloading, error reporting, etc.)
+```bash
+yarn dev
+yarn build
+```
+
+### Start storybook in dev/prod
+```bash
+yarn storybook
+yarn build-storybook
+```
+
+### Inspect Quasar-vite configuration
+```bash
+yarn inspect
+```
+
+### Lint the files
+```bash
+yarn lint
+```
+
+
+### Format the files
+```bash
+yarn format
+```
+
+
+# Curios how this package was made?
 
 Install quasar:
 ```bash
@@ -28,11 +63,16 @@ Configuration:
 ```
 
 Install Storybook:
+
+- https://storybook.js.org/docs/vue/get-started/install
+
 ```bash
 npx sb init --type vue3
 ```
 
-In root folder add file _.babelrc_ to enable typescript for storybook
+In root folder add file _.babelrc_ to enable typescript for storybook:
+
+- https://storybook.js.org/docs/vue/configure/overview#configure-your-project-with-typescript):
 ```jsonc
 // .babelrc
 
@@ -45,6 +85,10 @@ In root folder add file _.babelrc_ to enable typescript for storybook
 ```
 
 In folder _.storybook_ substitute _main.js_ and _preview.js_ with following typescript versions:
+
+- https://storybook.js.org/docs/vue/builders/vite#configuration
+- https://dev.to/allanjeremy/using-quasar-with-vue3-storybook-4dl8
+
 ```typescript
 // main.ts
 
@@ -119,7 +163,9 @@ export const parameters = {
 }
 ```
 
-Install Vite and storybook's vite-plugin
+Install Vite and storybook's vite-plugin:
+
+- https://storybook.js.org/docs/vue/builders/vite#setup
 
 ```bash
 yarn add vite
@@ -129,33 +175,6 @@ yarn add -D @storybook/builder-vite
 # Quasar and Vite
 
 https://quasar.dev/start/vite-plugin#introduction
+
 https://quasar.dev/quasar-cli-vite/
 
-
-## Install the dependencies
-```bash
-yarn
-# or
-npm install
-```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
-
-
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
